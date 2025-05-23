@@ -2,6 +2,13 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+// Restrict to POST method only
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Content-Type: application/json');
+    echo json_encode(['error' => 'Method not allowed. Only POST requests are supported.']);
+    exit;
+}
+
 require_once 'vendor/autoload.php';
 require_once __DIR__ . '/vendor/autoload.php';
 use \TCPDF;
@@ -12,8 +19,6 @@ $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 $googleApiKey = $_ENV['GOOGLE_API_KEY'];
-
-
 
 $api_key = $googleApiKey; 
 
