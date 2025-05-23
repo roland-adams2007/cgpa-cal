@@ -1,0 +1,93 @@
+
+/* AI Response Card */
+.ai-response-card {
+    background: #f0e6fb;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Rubik', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ai-response-card .card-header {
+    background: #7a21da;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    padding: 15px;
+    font-family: 'Figtree', sans-serif;
+}
+
+.ai-response-card .card-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.ai-response-card .card-body {
+    padding: 20px;
+}
+
+.ai-response-card .response-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.ai-response-card .suggestions h4,
+.ai-response-card .troubleshooting h4 {
+    font-family: 'Figtree', sans-serif;
+    font-size: 1.2rem;
+    color: #7a21da;
+    margin-bottom: 15px;
+}
+
+.ai-response-card .list-group-item {
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    padding: 10px 0;
+    color: #333;
+}
+
+.ai-response-card .alert {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.ai-response-card .btn-primary {
+    background-color: #7a21da;
+    border-color: #7a21da;
+    padding: 10px 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.ai-response-card .btn-primary:hover {
+    background-color: #6b1cc2;
+    border-color: #6b1cc2;
+}
+
+.ai-response-card .card-footer {
+    background: transparent;
+    border-top: none;
+    padding: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .ai-response-card {
+        margin: 15px;
+    }
+
+    .ai-response-card .card-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .ai-response-card .response-text {
+        font-size: 1rem;
+    }
+
+    .ai-response-card .suggestions h4,
+    .ai-response-card .troubleshooting h4 {
+        font-size: 1.1rem;
+    }
+}
